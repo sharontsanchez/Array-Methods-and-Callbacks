@@ -19,6 +19,18 @@ console.log('task 1d', finals2014[0]['Away Team Goals']);
 //(e) Winner of 2014 world cup final */
 console.log('task 1e', finals2014[0]['Win conditions']);
 
+function hOf(num1, num2, cb){
+  return cb(num1, num2);
+}
+const add = (num1, num2) =>{
+  return num1 + num2;
+}
+ console.log(hOf(2, 3, add));
+
+Add is a function that is passed into hOf function as a callback 
+
+
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use getFinals to do the following:
 1. Receive data as a parameter
